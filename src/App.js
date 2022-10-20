@@ -1,7 +1,8 @@
-import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
-import './App.css';
-import Home from './components/Home';
-import Puzzle from './components/Puzzle';
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import "./App.css";
+import Home from "./components/Home";
+import Puzzle from "./components/Puzzle";
+import Upload from "./components/Upload";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/puzzle" element={<Puzzle />} />
+          <Route path="/upload" element={<Upload />} />
         </Routes>
       </Router>
     </div>
